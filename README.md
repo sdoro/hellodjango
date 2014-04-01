@@ -14,9 +14,8 @@
 	git add .
 	git commit -m "my django app"
 	heroku create
-	ssh-keygen
-	less /home/knoppix/.ssh/id_rsa.pub
-	git push heroku master
+	ssh-keygen -f ~/.ssh/id_rsa_netkit -C "knoppix@netkit.org-$(date -I)"
+	heroku keys:add /home/knoppix/.ssh/id_rsa_netkit.pub
 	git push heroku master
 
 	git remote add origin git@github.com:sdoro/hellodjango.git
