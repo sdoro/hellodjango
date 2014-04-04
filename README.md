@@ -1,15 +1,17 @@
+	# export http_proxy="http://proxy.zuccante.it:8080/"
+	# export https_proxy=$http_proxy
 	mkdir hellodjango && cd hellodjango
 	virtualenv venv2
 	source venv2/bin/activate
 	pip install django-toolbelt
 	django-admin.py startproject hellodjango .
-	vi Procfile
+	nano Procfile
 	foreman start
 	pip install distribute -U
 	pip freeze > requirements.txt
-	vi hellodjango/settings.py
-	vi hellodjango/wsgi.py
-	vi .gitignore
+	nano hellodjango/settings.py
+	nano hellodjango/wsgi.py
+	nano .gitignore
 	git init
 	git add .
 	git commit -m "my django app"
