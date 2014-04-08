@@ -1,9 +1,9 @@
-* Premessa
+### Premessa
 
 Nota: i commenti ('#') relativi al proxy vanno tolti se stiamo operando
 dall'interno dell'Istituto Zuccante.
 
-* Creazione 'in locale di' un progetto
+### Creazione 'in locale di' un progetto
 
 	# export http_proxy="http://proxy.zuccante.it:8080/"
 	# export https_proxy=$http_proxy
@@ -15,7 +15,7 @@ dall'interno dell'Istituto Zuccante.
 	nano Procfile
 	foreman start
 
-* Caricamento 'nel cloud' di un progetto
+### Caricamento 'nel cloud' di un progetto
 
 	pip install distribute -U
 	pip freeze > requirements.txt
@@ -34,13 +34,13 @@ dall'interno dell'Istituto Zuccante.
 	# git remote add origin git@github.com:sdoro/hellodjango.git
 	# git push -u origin master
 
-* Modififica 'in locale' di un progetto gia' esistente
+### Modififica 'in locale' di un progetto gia' esistente
 
 	cd hellodjango
 	source venv2/bin/activate
 	foreman start
 
-* Modifica 'nel cloud' di un progetto gia' esistente
+### Modifica 'nel cloud' di un progetto gia' esistente
 
 	cd hellodjango
 	source venv2/bin/activate
